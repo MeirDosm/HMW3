@@ -1,0 +1,266 @@
+#include <iostream>
+#include <stdio.h>
+#include <math.h>
+using namespace std;
+
+#define Pi 3.14
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char** argv) {
+	
+	start:
+		cout << "Vvedite nomer zadaniya: ";
+		int n=0;
+		cin >> n;
+		
+		if (n==1)
+		{
+			int x=0;
+	        cout << "Vvedite chislo x: " << endl;
+	        cin >> x;
+	
+	
+	        if (x%2==0)
+	        {
+		        cout << "Chislo x yavlyaetsya chetnym." << endl;
+	 
+		
+	        }
+	        else 
+	        {
+		        cout << "Chislo x ne yavlyaetsya chetnym. << endl";
+	        }
+	
+	        goto start;
+		}
+		
+		else if (n==2)
+		{
+			int A=0;
+ 	        cout << "Vvedite chislo A: " << endl;
+ 	        cin >> A;
+ 	
+ 	        if ((A%2==0)||(A%3==0)){
+ 		        cout << "Chislo A kratno 2 ili 3." << endl;
+	        }
+	 
+	        else
+	        {
+	 	        cout << "Chislo A ne kratno ni 2 ni 3." << endl;
+	        }
+	 
+	        goto start;
+		}
+		
+		else if (n==3)
+		{
+			int A=0;
+ 	        int B=0;
+ 	        cout << "Vvedite chislo A i B: " << endl;
+ 	        cin >> A;
+ 	        cin >> B;
+ 	
+ 	        if ((A%2==1)&&(B%2==1)){
+ 		        cout << "Chisla A i B yavlyayutsya nechetnymi." << endl;
+	        }
+	 
+	        else 
+	        {
+	 	        cout << "Chisla libo A libo B ili oba chisla ne yavlyayutsya nechetnymi. " << endl;
+	        }
+	 
+	        goto start;
+		}
+		
+		else if (n==4)
+		{
+			int x=0;
+	        int y=0;
+	        int z=1;
+	
+	        if ((x<y)&&(y>z)){
+		        cout << "true" << endl;
+		
+	        }
+	        else 
+	        {
+		        cout << "false" << endl;
+		
+	        }
+	        if ((x>y)){
+		        cout << "true" << endl;
+		
+	        }
+	        else
+	        {
+		        cout << "false" << endl;
+	        }
+	        if ((x>z)<y) {
+		        cout << "true" << endl;
+	
+	        }
+	        else
+	        {
+		        cout << "false" << endl;
+	        }
+	        
+	        goto start;
+		}
+		
+		else if (n==5)
+		{
+			float x;
+	        int n;
+	        
+	        cout << "Vvedite x: " << endl;
+	        cin >> x;
+	
+	        if (x!=(Pi/2) + (Pi*n))
+	        {
+		
+		        cout << "x v oblasti opredeleniya funkcii y=2*tg(x)" << endl;
+	        }
+	
+	        else 
+	        {
+		
+		        cout << "x ne v oblasti opredeleniya funkcii y=2*tg(x)" << endl;
+	        }
+	
+	        if (x!=1)
+	        {
+		        cout << "x v oblasti opredeleniya funkcii y =3/(x-1)" << endl;
+	        }
+	
+	        else 
+	        {
+		        cout << "x ne yavlyaetsya oblast'yu opredeleniya funkcii y =3/(x-1)" << endl;
+	        }
+	        
+	        goto start;
+		}
+		
+		else if (n==6)
+		{
+			int A=1;
+			int B=0;
+			int C=1;
+			
+			if ((A<(A>B)<C))
+			{
+				cout << "true" << endl;
+			}
+			else
+			{
+				cout << "false" << endl;
+			}
+			
+			if ((A<C>(B<C)))
+			{
+				cout << "true" << endl;
+			}
+			else 
+			{
+				cout << "false" << endl;
+			}
+			
+			if (((A<B>C)<A))
+			{
+				cout << "true" << endl;
+			}
+			else
+			{
+				cout << "false" << endl;
+			}
+			
+			goto start;
+		}
+		
+		else if (n==7)
+		{
+			int A=0;
+	
+	        cout << "Vvedite celoe chislo A: " << endl;
+	        cin >> A;
+	
+	        if ((A/100!=0)&&(A/1000==0))
+	        {
+		        cout << "Chislo A yavlyaetsya trehznachnym. " << endl;
+	        }
+	
+	        else
+	        {
+		        cout << "Chislo A ne yavlyaetsya trehznachnym. " << endl;
+	        }
+	        
+	        goto start;
+		}
+		
+		else if (n==8)
+		{
+			int A=0;
+	        int B=0;
+	        int C=0;
+	
+	        cout << "Vvedite chisla A, B, C: " << endl;
+	        cin >> A;
+	        cin >> B;
+	        cin >> C;
+	
+	        if ((A<45)||(B<45)||(C<45))
+	        {
+		        cout << "Hotya by odno iz chisel men'she 45. " << endl;
+	        }
+	
+	        else
+	        {
+		        cout << "Ni odno iz chisel ne yavlyaetsya men'she 45. " << endl;
+	        }
+	        
+	        goto start;
+		}
+		
+		else if (n==9)
+		{
+			int A=0;
+	
+	        cout << "Vvedite celoe chislo A: " << endl;
+	        cin >> A;
+	
+	        if ((A%3!=0)&&(A%10==0))
+	        {
+	        	cout << "Chislo A ne kratno 3 i okanchivaetsya na 0. " << endl;
+	        }
+	        else
+	        {
+		        cout << "Chislo A kratno 3 ili okanchivaetsya ne na 0, libo i to i drugoe. " << endl;
+	        }
+	        
+	        goto start;
+		}
+		
+		else if (n==10)
+		{
+			float A=0;
+	
+	        cout << "Vvedite chislo A: " << endl;
+	        cin >> A;
+	
+	        if ((A>-137)&&(A<-51)||(A<123)&&(A>55))
+	        {
+		        cout << "Chislo A prinadlezhit intervalu ot -137 do -51 ili intervalu ot 123 do 55. " << endl;
+	        }
+	        else
+	        {
+		        cout << "Chislo A ne prinadlezhit intervalu ot -137 do -51 ili intervalu ot 123 do 55. " << endl;
+	        }
+	        
+	        goto start;
+		}
+		
+		else
+		{
+			cout << "Udachi!";
+		}
+	return 0;
+}
